@@ -7,7 +7,8 @@
 #include "MyActor.generated.h"
 
 UCLASS()
-//class UNREALTEST1_API AMyActor : public AActor
+//class UNREALTEST1_API AMyActor : public AActor  
+//UCLASS 관련 찾아보기
 class AMyActor : public AActor
 {
 	GENERATED_BODY()
@@ -23,7 +24,7 @@ protected:
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
-
+	//UPROPERTY 관련 찾아보기
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Damage") //블루프린트와 에디터에 보여줌
 	int32 TotalDamage;
 
@@ -38,6 +39,7 @@ public:
 	virtual void PostEditChangeProperty(FPropertyChangedEvent& PropertyChangedEvent) override;
 #endif
 
+	//UFUNCTION 관련 찾아보기
 	UFUNCTION(BlueprintCallable,Category="Damage")
 	void CalcuateValues();
 	
