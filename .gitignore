@@ -1,0 +1,11 @@
+## Ignore File ##
+*.sln
+*.csproj
+
+
+# ignore all files in the build/ directory
+.vs/
+Binaries/
+DerivedDataCache/
+Intermediate/
+Saved/
